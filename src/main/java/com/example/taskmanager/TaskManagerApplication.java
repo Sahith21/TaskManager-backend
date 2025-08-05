@@ -15,7 +15,7 @@ public class TaskManagerApplication {
 public WebMvcConfigurer corsConfigurer() {
     return new WebMvcConfigurer() {
         @Override
-        public void addCorsMappings(CorsRegistry registry) {
+        public void addCorsMappings(@org.springframework.lang.NonNull CorsRegistry registry) {
             registry.addMapping("/**").allowedOrigins("http://localhost:5173");
         }
     };
