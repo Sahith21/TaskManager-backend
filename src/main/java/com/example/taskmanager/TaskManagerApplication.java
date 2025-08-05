@@ -11,7 +11,9 @@ public class TaskManagerApplication {
     public static void main(String[] args) {
         SpringApplication.run(TaskManagerApplication.class, args);
     }
-    @Bean
+
+
+@Bean
 public WebMvcConfigurer corsConfigurer() {
     return new WebMvcConfigurer() {
         @Override
